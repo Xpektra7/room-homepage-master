@@ -9,7 +9,6 @@
   
   <title>Frontend Mentor | Room homepage</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; display: none;}
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -18,19 +17,19 @@
 </head>
 <body>
 
-  <div class="hero" role="header">
+  <div class="hero" role="region"
     <img src="images/desktop-image-hero-1.jpg" alt="" id="bg">
     <header>
       <button id="open-menu" onclick="toggleMenu()" aria-label="toggleMenu"><img src="images/icon-hamburger.svg" alt=""></button>
       <img src="images/logo.svg" alt="">
-      <nav>
+      <nav role="navigation">
         <a href="#">home</a>
         <a href="#">shop</a>
         <a href="#">about</a>
         <a href="#">contact</a>
       </nav>
     </header>
-    <nav class="mobile" id="mobile-menu">
+    <nav role="navigation" class="mobile" id="mobile-menu">
       <button id="close-menu" onclick="toggleMenu()">
         <img src="images/icon-close.svg" alt="">
       </button>
@@ -39,7 +38,7 @@
       <a href="#">about</a>
       <a href="#">contact</a>
   </nav>
-    <div class="controls">
+    <div class="controls" role="button">
       <button onclick="prevSlide()" aria-label="prevSlide">
         <img src="images/icon-angle-left.svg" alt="">
       </button>
@@ -50,7 +49,7 @@
 
 
   </div>
-  <div class="discover" role="aside" >
+  <div class="discover" role="contentinfo" >
       <div style="width: 80%;" id="discover">
         <h1>Discover innovative ways to decorate</h1>
         <p>We provide unmatched quality, comfort, and style for property owners across the country. 
@@ -61,7 +60,7 @@
         </a>
       </div>
 
-      <div class="controls" role="navigation">
+      <div class="controls" role="button">
         <button onclick="prevSlide()" aria-label="prevSlide">
           <img src="images/icon-angle-left.svg" alt="" >
         </button>
@@ -74,10 +73,10 @@
 
 
 
-  <div class="about_img_1" role="aside">
+  <div class="about_img_1" role="img">
     <img src="images/image-about-dark.jpg" alt="image-about-dark">
   </div>
-  <div class="about">
+  <div class="about" role="aside">
     <div>
       <h2 style="text-transform: uppercase;">About our furniture</h2>
       <p style="color: var(--Dark-Gray);">Our multifunctional collection blends design and function to suit your individual taste.
@@ -86,12 +85,12 @@
         or anything in between. Product specialists are available to help you create your dream space.</p>  
     </div>
   </div>
-  <div class="about_img_2">
+  <div class="about_img_2" role="img">
     <img src="images/image-about-light.jpg" alt="image-about-light">
   </div>
 
   
-  <footer class="attribution">
+  <footer class="attribution" >
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </footer>
